@@ -1,3 +1,4 @@
+# Print Name and Count up to Favorite Number.
 Name = "Ben"
 FavNumber = 11
 sqrd = FavNumber * FavNumber
@@ -8,6 +9,8 @@ for i in range(0,sqrd+1):
     else:
         print (i)
 
+
+#Object-oriented Program - Store Engineer Details.
 class Engineer:
     def __init__(self,name,type,years):
         self.name = name
@@ -29,3 +32,11 @@ Eng1.getexperience()
 Eng2.getname()
 Eng2.gettype()
 Eng2.getexperience()
+
+# Name reversal Program - Printout reversed Name.
+name = "Ben"
+reverseName = ""
+lenght = len(name)
+for index in range(lenght-1, -1, -1):
+    reverseName = reverseName+name[index]
+print("Reverse of", name, "=", reverseName)
